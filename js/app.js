@@ -20,10 +20,10 @@ function setWhatsAppNumber(newNumber) {
   return false;
 }
 
-// Gera link de contato no WhatsApp com mensagem pré-definida
+// Gera link de contato no WhatsApp com mensagem pré-definida limpa e sem emojis (evita caracteres corrompidos)
 function generateWhatsAppLink(itemTitle, itemCategory, itemPrice) {
   const phone = getWhatsAppNumber();
-  const text = `Olá! Vi o catálogo do *ConvitesMágicos* ✨ e quero encomendar o modelo:\n\n🎉 *${itemTitle}*\n📂 Categoria: ${itemCategory}\n💰 Valor: ${itemPrice}\n\nPoderia me passar os dados para personalização da festa?`;
+  const text = `Olá! Vi o catálogo do *ConvitesMágicos* e quero encomendar o modelo:\n\n*Modelo:* ${itemTitle}\n*Categoria:* ${itemCategory}\n*Valor:* ${itemPrice}\n\nPoderia me passar os dados para personalização da festa?`;
   return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 }
 
@@ -57,7 +57,7 @@ function updatePhoneDisplays() {
 
   const generalLinks = document.querySelectorAll(".general-whatsapp-link");
   generalLinks.forEach(link => {
-    link.href = `https://wa.me/${currentPhone}?text=${encodeURIComponent("Olá! Gostaria de tirar dúvidas sobre os convites do ConvitesMágicos ✨!")}`;
+    link.href = `https://wa.me/${currentPhone}?text=${encodeURIComponent("Olá! Gostaria de tirar dúvidas sobre os convites do ConvitesMágicos!")}`;
   });
 }
 

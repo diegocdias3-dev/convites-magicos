@@ -4,15 +4,26 @@ Catálogo completo, interativo e responsivo de convites infantis personalizados,
 
 ---
 
-## 🌟 Estrutura de Preços e Categorias
+## 🌟 Estrutura de Preços, Prazos e Alterações
 
 - 🖼️ **Convite Digital em Imagem**: **R$ 39,00**
+  - **Prazo de Entrega:** em até **24 horas**
+  - **Alterações:** Até 3 alterações gratuitas inclusas
+  - **Alterações Extras (a partir da 4ª):** +R$ 5,00 por alteração
   - Arte digital personalizada em altíssima definição (PNG/JPG).
   - Envio ilimitado pelo WhatsApp e pronta para impressão.
+
 - 🎬 **Convite Animado em Vídeo**: **R$ 89,00**
+  - **Prazo de Entrega:** em até **48 horas**
+  - **Alterações:** Até 3 alterações gratuitas inclusas
+  - **Alterações Extras (a partir da 4ª):** +R$ 10,00 por alteração
   - Vídeo animado com efeitos especiais e trilha sonora temática.
   - Formato dinâmico ideal para WhatsApp e Reels/Stories.
+
 - 👑 **Convite Site Interativo Premium**: **R$ 197,00**
+  - **Prazo de Entrega:** em até **72 horas**
+  - **Alterações:** Até 3 alterações gratuitas inclusas
+  - **Alterações Extras (a partir da 4ª):** +R$ 30,00 por alteração
   - Site completo exclusivo para o aniversário com link personalizado.
   - Modelo de referência ao vivo: [1 Aninho da Princesa Isadora • Convite Real](https://site-oficial-seguro.github.io/convite-aniversario-isadora/)
   - Confirmação de Presença (RSVP) direta no WhatsApp.
@@ -22,14 +33,11 @@ Catálogo completo, interativo e responsivo de convites infantis personalizados,
 
 ---
 
-## 📱 Integração com WhatsApp
+## 📱 WhatsApp de Atendimento
 
-Cada convite possui um botão de ação com ícone do WhatsApp que envia uma mensagem personalizada contendo:
-- Nome exato do modelo escolhido
-- Categoria (Imagem, Vídeo ou Site)
-- Valor do modelo
-
-O número padrão de atendimento pode ser ajustado a qualquer momento clicando no botão **"⚙️ Alterar Telefone do WhatsApp"** no rodapé do site, ficando salvo no navegador sem precisar alterar código.
+- **Número Oficial:** `+55 (42) 99841-2819` (`5542998412819`)
+- Cada convite possui um botão de ação com ícone do WhatsApp que envia uma mensagem personalizada com o nome exato do modelo e o valor.
+- O número de atendimento pode ser ajustado facilmente clicando em **"⚙️ Alterar Telefone do WhatsApp"** no rodapé do site.
 
 ---
 

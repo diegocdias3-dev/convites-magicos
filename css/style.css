@@ -199,6 +199,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 .logo-icon-box {
@@ -212,6 +213,12 @@ button {
   font-size: 1.4rem;
   color: #fff;
   box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+  flex-shrink: 0;
+}
+
+.logo-text-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-text-box .brand-title {
@@ -221,12 +228,14 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
+  white-space: nowrap;
 }
 
 .logo-text-box .brand-tagline {
   font-size: 0.72rem;
   color: var(--text-muted);
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav-desktop {

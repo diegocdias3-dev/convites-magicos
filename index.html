@@ -21,7 +21,7 @@
 
   <!-- Barra de Notificação Superior -->
   <div class="top-notice-bar">
-    <span>✨ <strong>Promoção Especial:</strong> Entrega rápida em até 24h via WhatsApp para todos os modelos!</span>
+    <span>✨ <strong>Prazos Ágeis:</strong> Imagem em 24h • Vídeo em 48h • Site em 72h • Até 3 alterações inclusas!</span>
   </div>
 
   <!-- Header Principal -->
@@ -40,20 +40,14 @@
         <a href="#catalogo" class="nav-link">
           <span>🌟</span> Catálogo Completo
         </a>
-        <a href="#convite-premium-banner" class="nav-link" onclick="filterTabDirect('site')">
-          <span>👑</span> Convite Site (R$ 197)
-        </a>
-        <a href="#catalogo" class="nav-link" onclick="filterTabDirect('video')">
-          <span>🎬</span> Vídeos (R$ 89)
-        </a>
-        <a href="#catalogo" class="nav-link" onclick="filterTabDirect('image')">
-          <span>🖼️</span> Imagens (R$ 39)
-        </a>
         <a href="#como-funciona" class="nav-link">
-          <span>⚡</span> Como Funciona
+          <span>⚡</span> Como Funciona & Alterações
         </a>
         <a href="#tabela-precos" class="nav-link">
-          <span>🏷️</span> Preços
+          <span>🏷️</span> Preços & Prazos
+        </a>
+        <a href="#faq" class="nav-link">
+          <span>❓</span> Dúvidas Frequentes
         </a>
       </nav>
 
@@ -71,12 +65,9 @@
 
     <!-- Menu Gaveta Mobile -->
     <div class="mobile-menu-drawer hidden" id="mobile-menu">
-      <a href="#catalogo" class="mobile-nav-link" onclick="filterTabDirect('all')">🌟 Todos os Modelos</a>
-      <a href="#convite-premium-banner" class="mobile-nav-link" onclick="filterTabDirect('site')">👑 Convite Site Premium (R$ 197)</a>
-      <a href="#catalogo" class="mobile-nav-link" onclick="filterTabDirect('video')">🎬 Convites em Vídeo (R$ 89)</a>
-      <a href="#catalogo" class="mobile-nav-link" onclick="filterTabDirect('image')">🖼️ Convites em Imagem (R$ 39)</a>
-      <a href="#como-funciona" class="mobile-nav-link">⚡ Como Funciona</a>
-      <a href="#tabela-precos" class="mobile-nav-link">🏷️ Tabela de Preços</a>
+      <a href="#catalogo" class="mobile-nav-link" onclick="filterTabDirect('all')">🌟 Catálogo Completo</a>
+      <a href="#como-funciona" class="mobile-nav-link">⚡ Como Funciona & Alterações</a>
+      <a href="#tabela-precos" class="mobile-nav-link">🏷️ Preços & Prazos</a>
       <a href="#faq" class="mobile-nav-link">❓ Dúvidas Frequentes</a>
     </div>
   </header>
@@ -102,10 +93,10 @@
           <h3 class="price-card-title">Convite Imagem Digital</h3>
           <div class="price-card-val">R$ 39</div>
           <ul class="price-card-features">
+            <li><strong>Prazo: 24 horas</strong></li>
+            <li><strong>Até 3 alterações inclusas</strong></li>
             <li>Arte em altíssima resolução</li>
-            <li>Pronto para enviar no WhatsApp</li>
-            <li>Arquivo para impressão se desejar</li>
-            <li>Personalização de nome, idade e local</li>
+            <li>Pronto para WhatsApp e impressão</li>
           </ul>
           <a href="#catalogo" class="btn btn-secondary btn-block">Ver Modelos em Imagem</a>
         </div>
@@ -116,10 +107,10 @@
           <h3 class="price-card-title">Convite Animado em Vídeo</h3>
           <div class="price-card-val">R$ 89</div>
           <ul class="price-card-features">
-            <li>Vídeo animado com efeitos especiais</li>
-            <li>Música temática emocionante</li>
-            <li>Formato ideal para WhatsApp e Stories</li>
-            <li>Entrega rápida em até 24h</li>
+            <li><strong>Prazo: 48 horas</strong></li>
+            <li><strong>Até 3 alterações inclusas</strong></li>
+            <li>Vídeo animado com efeitos e música</li>
+            <li>Ideal para WhatsApp e Stories</li>
           </ul>
           <a href="#catalogo" class="btn btn-secondary btn-block">Ver Vídeos Animados</a>
         </div>
@@ -131,10 +122,10 @@
           <h3 class="price-card-title">Convite Site Premium</h3>
           <div class="price-card-val">R$ 197</div>
           <ul class="price-card-features">
-            <li>Página web exclusiva com link único</li>
-            <li>Confirmação de Presença (RSVP)</li>
-            <li>Localização com Waze e Google Maps</li>
-            <li>Música, Contagem Regressiva e Fotos</li>
+            <li><strong>Prazo: 72 horas</strong></li>
+            <li><strong>Até 3 alterações inclusas</strong></li>
+            <li>Site com link único, RSVP e GPS</li>
+            <li>Música, contagem e galeria de fotos</li>
           </ul>
           <a href="#convite-premium-banner" class="btn btn-primary btn-block">Ver Modelo Premium</a>
         </div>
@@ -232,9 +223,16 @@
           <div class="step-icon">🖼️</div>
           <h3 class="step-title">Convite Imagem Digital</h3>
           <p style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin: 0.5rem 0;">R$ 39,00</p>
+          <div style="margin-bottom: 0.75rem; font-size: 0.85rem; font-weight: 700; color: #15803d; background: #dcfce7; padding: 0.3rem 0.6rem; border-radius: 999px; display: inline-block;">
+            ⚡ Entrega em até 24 horas
+          </div>
           <p class="step-desc">
-            Prático, econômico e perfeito para disparar para todos os contatos do WhatsApp. Arquivo em alta definição pronto para impressão ou compartilhamento digital sem limite de envios.
+            Prático, econômico e perfeito para disparar para todos os contatos do WhatsApp. Arquivo em alta definição pronto para impressão ou compartilhamento digital.
           </p>
+          <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1; font-size: 0.8rem; color: #64748b;">
+            ✏️ Até 3 alterações inclusas<br>
+            ⚠️ A partir da 4ª alteração: +R$ 5,00 cada
+          </div>
         </div>
 
         <!-- Formato 2 -->
@@ -242,9 +240,16 @@
           <div class="step-icon">🎬</div>
           <h3 class="step-title">Convite Animado em Vídeo</h3>
           <p style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin: 0.5rem 0;">R$ 89,00</p>
+          <div style="margin-bottom: 0.75rem; font-size: 0.85rem; font-weight: 700; color: #0369a1; background: #e0f2fe; padding: 0.3rem 0.6rem; border-radius: 999px; display: inline-block;">
+            ⚡ Entrega em até 48 horas
+          </div>
           <p class="step-desc">
             Uma mini animação de cinema com a música tema da festa, fotos e movimentos que encantam e surpreendem os convidados logo nos primeiros segundos.
           </p>
+          <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1; font-size: 0.8rem; color: #64748b;">
+            ✏️ Até 3 alterações inclusas<br>
+            ⚠️ A partir da 4ª alteração: +R$ 10,00 cada
+          </div>
         </div>
 
         <!-- Formato 3 -->
@@ -252,9 +257,16 @@
           <div class="step-icon">👑</div>
           <h3 class="step-title">Convite Site Interativo Premium</h3>
           <p style="font-size: 1.5rem; font-weight: 800; color: #b45309; margin: 0.5rem 0;">R$ 197,00</p>
+          <div style="margin-bottom: 0.75rem; font-size: 0.85rem; font-weight: 700; color: #b45309; background: #fef3c7; padding: 0.3rem 0.6rem; border-radius: 999px; display: inline-block;">
+            ⚡ Entrega em até 72 horas
+          </div>
           <p class="step-desc">
             O ápice da sofisticação: um site completo com link próprio, confirmação de presença (RSVP), rota GPS para Waze/Maps, música ambiente e contagem regressiva.
           </p>
+          <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px dashed #fbbf24; font-size: 0.8rem; color: #92400e;">
+            ✏️ Até 3 alterações inclusas<br>
+            ⚠️ A partir da 4ª alteração: +R$ 30,00 cada
+          </div>
         </div>
       </div>
     </div>
@@ -280,15 +292,43 @@
         <div class="step-card">
           <div class="step-number">2</div>
           <div class="step-icon">💬</div>
-          <h3 class="step-title">Chame no WhatsApp</h3>
-          <p class="step-desc">Clique no botão verde do modelo. O WhatsApp abrirá automaticamente com o nome do convite para você enviar os dados (nome, idade, data e local).</p>
+          <h3 class="step-title">Envie os Dados no WhatsApp</h3>
+          <p class="step-desc">Clique no botão do WhatsApp. Você nos encaminha as informações da festa (nome da criança, idade, data, horário e endereço completo).</p>
         </div>
 
         <div class="step-card">
           <div class="step-number">3</div>
           <div class="step-icon">🎉</div>
-          <h3 class="step-title">Receba Pronto em 24h</h3>
-          <p class="step-desc">Enviamos a prévia para sua aprovação. Após aprovado, você recebe o arquivo final em alta qualidade para impressionar todos os convidados!</p>
+          <h3 class="step-title">Produção & Aprovação</h3>
+          <p class="step-desc">Montamos seu convite (Imagem em 24h, Vídeo em 48h, Site em 72h). Você recebe a prévia para conferir e aprovar!</p>
+        </div>
+      </div>
+
+      <!-- Caixa de Política de Alterações -->
+      <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem 2rem; border: 2px solid #e2e8f0; margin-top: 2.5rem; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+          <span style="font-size: 1.8rem;">✏️</span>
+          <h3 style="font-size: 1.3rem; font-weight: 700; color: #1e1b4b;">Como Funcionam as Alterações nos Convites</h3>
+        </div>
+        <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin-bottom: 0.75rem;">
+          Após você encaminhar as informações da festa, nós confeccionamos o convite do modelo escolhido. A partir do envio da prévia, você tem direito a <strong>até 3 alterações gratuitas inclusas</strong> para ajustar qualquer detalhe e garantir que tudo fique perfeito!
+        </p>
+        <p style="font-size: 0.92rem; color: #1e1b4b; font-weight: 600; margin-bottom: 0.5rem;">
+          Caso venha a solicitar uma <strong>4ª alteração em diante</strong>, é cobrada uma pequena taxa de ajuste:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 0.75rem;">
+          <div style="background: #f8fafc; padding: 0.85rem 1.1rem; border-radius: var(--radius-md); border-left: 4px solid #10b981;">
+            <strong style="color: #1e1b4b; display: block; font-size: 0.95rem;">🖼️ Convite de Imagem:</strong>
+            <span style="font-size: 0.85rem; color: #64748b;">+R$ 5,00 por alteração a partir da 4ª</span>
+          </div>
+          <div style="background: #f8fafc; padding: 0.85rem 1.1rem; border-radius: var(--radius-md); border-left: 4px solid var(--primary);">
+            <strong style="color: #1e1b4b; display: block; font-size: 0.95rem;">🎬 Convite em Vídeo:</strong>
+            <span style="font-size: 0.85rem; color: #64748b;">+R$ 10,00 por alteração a partir da 4ª</span>
+          </div>
+          <div style="background: #f8fafc; padding: 0.85rem 1.1rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent-gold);">
+            <strong style="color: #1e1b4b; display: block; font-size: 0.95rem;">👑 Convite em Site:</strong>
+            <span style="font-size: 0.85rem; color: #64748b;">+R$ 30,00 por alteração a partir da 4ª</span>
+          </div>
         </div>
       </div>
     </div>
@@ -305,23 +345,30 @@
 
       <div class="faq-grid">
         <details class="faq-card">
-          <summary>Como recebo meu convite após o pedido?</summary>
-          <p>O convite finalizado é enviado diretamente no seu WhatsApp ou por e-mail em alta resolução (PNG/JPG para imagens, MP4 Full HD para vídeos, ou link exclusivo para o Convite em Site).</p>
+          <summary>Qual o prazo de entrega de cada convite?</summary>
+          <p>
+            O prazo começa a contar após o envio de todos os dados da festa:<br>
+            • <strong>Convite em Imagem:</strong> em até <strong>24 horas</strong>.<br>
+            • <strong>Convite em Vídeo:</strong> em até <strong>48 horas</strong>.<br>
+            • <strong>Convite Site Premium:</strong> em até <strong>72 horas</strong>.
+          </p>
         </details>
 
         <details class="faq-card">
-          <summary>Qual o prazo de entrega?</summary>
-          <p>Nosso prazo padrão de entrega é de até 24 horas úteis após o envio de todos os dados da festa (nome, idade, data, horário e endereço).</p>
+          <summary>Quantas alterações posso solicitar no convite?</summary>
+          <p>
+            Após você enviar as informações da festa e receber a prévia, você tem direito a <strong>até 3 alterações gratuitas</strong> inclusas em qualquer modelo. Se solicitar uma 4ª alteração em diante, há uma adição no valor: <strong>+R$ 5 no convite de imagem</strong>, <strong>+R$ 10 no vídeo</strong> e <strong>+R$ 30 no site</strong> por alteração.
+          </p>
         </details>
 
         <details class="faq-card">
-          <summary>Posso alterar os dados e as frases do convite?</summary>
-          <p>Sim! Todos os convites são 100% personalizados com os dados da sua comemoração, incluindo frases adicionais que a família desejar incluir.</p>
+          <summary>Como recebo meu convite após a aprovação?</summary>
+          <p>O convite finalizado é enviado diretamente no seu WhatsApp ou por e-mail em alta resolução (PNG/JPG para imagens, MP4 Full HD para vídeos, ou link exclusivo personalizado para o Convite em Site).</p>
         </details>
 
         <details class="faq-card">
           <summary>Como funciona a confirmação de presença no Convite Site Premium?</summary>
-          <p>No Convite em Site (R$ 197), há um botão interativo de RSVP onde os convidados preenchem nome e quantidade de adultos/crianças, e a confirmação chega diretamente no seu WhatsApp!</p>
+          <p>No Convite em Site (R$ 197), há um botão interativo de RSVP onde os convidados preenchem nome e quantidade de acompanhantes, e a confirmação chega diretamente no seu WhatsApp!</p>
         </details>
 
         <details class="faq-card">
@@ -352,20 +399,20 @@
         <div class="footer-col">
           <h4>Nossos Formatos</h4>
           <ul class="footer-links">
-            <li><a href="#catalogo" onclick="filterTabDirect('image')">Convites em Imagem (R$ 39)</a></li>
-            <li><a href="#catalogo" onclick="filterTabDirect('video')">Vídeos Animados (R$ 89)</a></li>
-            <li><a href="#convite-premium-banner" onclick="filterTabDirect('site')">Convite Site Premium (R$ 197)</a></li>
-            <li><a href="#tabela-precos">Comparativo de Formatos</a></li>
+            <li><a href="#catalogo" onclick="filterTabDirect('image')">Convites em Imagem (R$ 39) • 24h</a></li>
+            <li><a href="#catalogo" onclick="filterTabDirect('video')">Vídeos Animados (R$ 89) • 48h</a></li>
+            <li><a href="#convite-premium-banner" onclick="filterTabDirect('site')">Convite Site Premium (R$ 197) • 72h</a></li>
+            <li><a href="#tabela-precos">Tabela & Prazos</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Atendimento</h4>
           <ul class="footer-links">
-            <li>WhatsApp: <strong class="current-whatsapp-display">(11) 99999-9999</strong></li>
+            <li>WhatsApp: <strong class="current-whatsapp-display">(42) 99841-2819</strong></li>
             <li>Horário: Segunda a Sábado das 08h às 21h</li>
-            <li>Prazo de Entrega: Até 24 horas</li>
-            <li>Pagamento: Pix e Cartão de Crédito</li>
+            <li>Prazos: Imagem 24h | Vídeo 48h | Site 72h</li>
+            <li>Alterações: 3 gratuitas inclusas</li>
           </ul>
         </div>
       </div>

@@ -3,7 +3,7 @@
  * Dados estruturados de convites: Site Premium, Vídeos e Imagens
  */
 
-const DEFAULT_WHATSAPP_PHONE = "5511999999999";
+const DEFAULT_WHATSAPP_PHONE = "5542998412819";
 
 const PREMIUM_INVITATION = {
   id: "site-isadora-premium",
@@ -14,6 +14,9 @@ const PREMIUM_INVITATION = {
   categoryIcon: "👑",
   price: 197,
   priceFormatted: "R$ 197",
+  deliveryTime: "72 horas",
+  extraRevisionPrice: 30,
+  extraRevisionText: "Até 3 alterações inclusas. A partir da 4ª alteração: taxa de +R$ 30,00 por alteração.",
   badge: "O Mais Completo & Exclusivo ⭐",
   url: "https://site-oficial-seguro.github.io/convite-aniversario-isadora/",
   tagline: "A experiência definitiva: um site completo, interativo e inesquecível para o aniversário!",
@@ -83,7 +86,12 @@ const VIDEOS_CATALOG = [
     tags: ["Fazendinha", "Bichinhos", "Aquarela", "Animais", "1 Aninho"],
     desc: "Os bichinhos mais fofos da fazenda em uma animação alegre e cheia de cores vibrantes."
   }
-];
+].map(item => ({
+  ...item,
+  deliveryTime: "48 horas",
+  extraRevisionPrice: 10,
+  extraRevisionText: "Até 3 alterações inclusas. A partir da 4ª alteração: taxa de +R$ 10,00 por alteração."
+}));
 
 const IMAGES_CATALOG = [
   {
@@ -394,5 +402,8 @@ const IMAGES_CATALOG = [
   categoryIcon: "🖼️",
   price: 39,
   priceFormatted: "R$ 39",
+  deliveryTime: "24 horas",
+  extraRevisionPrice: 5,
+  extraRevisionText: "Até 3 alterações inclusas. A partir da 4ª alteração: taxa de +R$ 5,00 por alteração.",
   desc: "Arte digital personalizada em altíssima resolução. Ideal para enviar no WhatsApp e pronta para impressão se desejar."
 }));

@@ -2,10 +2,10 @@
  * ConvitesMágicos - Aplicação Principal de Catálogo Interativo
  */
 
-// Recupera ou define número do WhatsApp (Padrão: 5511999999999 ou salvo no navegador)
+// Recupera ou define número do WhatsApp (Padrão: 5542998412819 ou salvo no navegador)
 function getWhatsAppNumber() {
   const saved = localStorage.getItem("convites_magicos_whatsapp");
-  if (saved && saved.trim().length >= 10) {
+  if (saved && saved.trim().length >= 10 && saved.trim() !== "5511999999999") {
     return saved.trim().replace(/\D/g, "");
   }
   return DEFAULT_WHATSAPP_PHONE;
@@ -387,8 +387,10 @@ function renderVideoCard(item) {
       </div>
 
       <div class="card-content">
-        <div class="card-tags">
+        <div class="card-tags" style="display: flex; gap: 0.35rem; flex-wrap: wrap;">
           <span class="theme-badge">${item.theme}</span>
+          <span class="theme-badge" style="background: #e0f2fe; color: #0369a1; font-weight: 700;">⚡ 48 horas</span>
+          <span class="theme-badge" style="background: #fef3c7; color: #92400e; font-weight: 700;">3 alterações</span>
         </div>
         <h4 class="card-title">${item.title}</h4>
         <p class="card-desc">${item.desc}</p>
@@ -439,8 +441,10 @@ function renderImageCard(item) {
       </div>
 
       <div class="card-content">
-        <div class="card-tags">
+        <div class="card-tags" style="display: flex; gap: 0.35rem; flex-wrap: wrap;">
           <span class="theme-badge">${item.theme}</span>
+          <span class="theme-badge" style="background: #dcfce7; color: #15803d; font-weight: 700;">⚡ 24 horas</span>
+          <span class="theme-badge" style="background: #fef3c7; color: #92400e; font-weight: 700;">3 alterações</span>
         </div>
         <h4 class="card-title">${item.title}</h4>
         <p class="card-desc">${item.desc}</p>
@@ -558,11 +562,13 @@ function openMediaModal(id, type) {
         <div class="modal-perks-list">
           <h4>O que está incluso na personalização:</h4>
           <ul>
+            <li>⚡ <strong>Prazo de Entrega:</strong> ${item.deliveryTime}</li>
+            <li>✏️ <strong>Alterações Inclusas:</strong> Até 3 alterações gratuitas após envio dos dados</li>
+            <li>ℹ️ <strong>Alterações Extras:</strong> A partir da 4ª alteração: +R$ ${item.extraRevisionPrice},00 por alteração</li>
             <li>✨ Nome do aniversariante e idade comemorada</li>
             <li>📅 Data, dia da semana e horário da festa</li>
             <li>📍 Endereço completo do evento ou buffet</li>
             <li>💬 Frase especial personalizada pela família</li>
-            <li>⚡ Envio super rápido em até 24 horas</li>
             <li>📱 Arquivo final em altíssima resolução para envio ilimitado</li>
           </ul>
         </div>

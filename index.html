@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConvitesMágicos ✨ • Catálogo Oficial de Convites Infantis</title>
+  <meta name="description" content="Catálogo completo de convites infantis personalizados: Convites digitais em imagem por R$39, vídeos animados por R$89 e site interativo premium por R$197. Peça direto no WhatsApp!">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="ConvitesMágicos ✨ • Catálogo de Convites Infantis">
+  <meta property="og:description" content="Escolha o modelo perfeito para a festa do seu filho(a)! Convites em Imagem, Vídeo e Site Interativo.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon Emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%2232%22%20height=%2232%22><text y=%2226%22 font-size=%2226%22>✨</text></svg>">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barra de Notificação Superior -->
+  <div class="top-notice-bar">
+    <span>✨ <strong>Promoção Especial:</strong> Entrega rápida em até 24h via WhatsApp para todos os modelos!</span>
+  </div>
+
+  <!-- Header Principal -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo-wrapper">
+        <div class="logo-icon-box">🪄</div>
+        <div class="logo-text-box">
+          <span class="brand-title">ConvitesMágicos</span>
+          <span class="brand-tagline">Convites Infantis Personalizados</span>
+        </div>
+      </div>
+
+      <!-- Navegação Desktop -->
+      <nav class="nav-desktop">
+        <a href="#catalogo" class="nav-link">
+          <span>🌟</span> Catálogo Completo
+        </a>
+        <a href="#convite-premium-banner" class="nav-link" onclick="filterTabDirect('site')">
+          <span>👑</span> Convite Site (R$ 197)
+        </a>
+        <a href="#catalogo" class="nav-link" onclick="filterTabDirect('video')">
+          <span>🎬</span> Vídeos (R$ 89)
+        </a>
+        <a href="#catalogo" class="nav-link" onclick="filterTabDirect('image')">
+          <span>🖼️</span> Imagens (R$ 39)
+        </a>
+        <a href="#como-funciona" class="nav-link">
+          <span>⚡</span> Como Funciona
+        </a>
+        <a href="#tabela-precos" class="nav-link">
+          <span>🏷️</span> Preços
+        </a>
+      </nav>
+
+      <!-- Ação Direta no Header -->
+      <div class="header-actions">
+        <a href="#" class="btn btn-whatsapp btn-header-wa general-whatsapp-link" target="_blank" rel="noopener noreferrer">
+          <svg class="wa-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.584 1.961.947 2.796.947 3.179 0 5.765-2.587 5.765-5.766-.001-3.182-2.585-5.768-5.765-5.768zm3.393 8.307c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.146-.532-1.859-.775-3.056-2.67-3.149-2.795-.091-.125-.758-1.009-.758-1.923 0-.915.479-1.365.65-1.551.171-.186.375-.233.5-.233.125 0 .25.002.359.007.116.006.27-.044.423.322.157.375.539 1.316.586 1.411.048.096.08.209.016.335-.064.126-.096.205-.191.317-.096.113-.203.251-.289.338-.096.096-.197.2-.085.392.112.193.498.822 1.069 1.33 1.332.735 1.488.949 1.701 1.045.213.096.338.08.464-.064.127-.144.542-.63.687-.845.144-.216.29-.18.487-.107.199.073 1.258.594 1.474.702.216.108.361.162.414.253.053.091.053.526-.091.931z"/>
+          </svg>
+          <span>Falar no WhatsApp</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Menu Gaveta Mobile -->
+    <div class="mobile-menu-drawer hidden" id="mobile-menu">
+      <a href="#catalogo" class="mobile-nav-link" onclick="filterTabDirect('all')">🌟 Todos os Modelos</a>
+      <a href="#convite-premium-banner" class="mobile-nav-link" onclick="filterTabDirect('site')">👑 Convite Site Premium (R$ 197)</a>
+      <a href="#catalogo" class="mobile-nav-link" onclick="filterTabDirect('video')">🎬 Convites em Vídeo (R$ 89)</a>
+      <a href="#catalogo" class="mobile-nav-link" onclick="filterTabDirect('image')">🖼️ Convites em Imagem (R$ 39)</a>
+      <a href="#como-funciona" class="mobile-nav-link">⚡ Como Funciona</a>
+      <a href="#tabela-precos" class="mobile-nav-link">🏷️ Tabela de Preços</a>
+      <a href="#faq" class="mobile-nav-link">❓ Dúvidas Frequentes</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-pill-badge">
+        <span>✨ O convite perfeito para o aniversário dos sonhos</span>
+      </div>
+      <h1 class="hero-title">
+        Convites Infantis que <span class="gradient-text">Encantam e Emocionam</span>
+      </h1>
+      <p class="hero-desc">
+        Explore nosso catálogo oficial com temas para meninas e meninos. Escolha o seu modelo favorito e clique para pedir diretamente no WhatsApp já com todos os dados da festa!
+      </p>
+
+      <!-- 3 Planos Padrão em Destaque -->
+      <div class="hero-price-cards">
+        <!-- Card 1: Imagem -->
+        <div class="price-card" onclick="filterTabDirect('image')">
+          <div class="price-card-icon">🖼️</div>
+          <h3 class="price-card-title">Convite Imagem Digital</h3>
+          <div class="price-card-val">R$ 39</div>
+          <ul class="price-card-features">
+            <li>Arte em altíssima resolução</li>
+            <li>Pronto para enviar no WhatsApp</li>
+            <li>Arquivo para impressão se desejar</li>
+            <li>Personalização de nome, idade e local</li>
+          </ul>
+          <a href="#catalogo" class="btn btn-secondary btn-block">Ver Modelos em Imagem</a>
+        </div>
+
+        <!-- Card 2: Vídeo -->
+        <div class="price-card" onclick="filterTabDirect('video')">
+          <div class="price-card-icon">🎬</div>
+          <h3 class="price-card-title">Convite Animado em Vídeo</h3>
+          <div class="price-card-val">R$ 89</div>
+          <ul class="price-card-features">
+            <li>Vídeo animado com efeitos especiais</li>
+            <li>Música temática emocionante</li>
+            <li>Formato ideal para WhatsApp e Stories</li>
+            <li>Entrega rápida em até 24h</li>
+          </ul>
+          <a href="#catalogo" class="btn btn-secondary btn-block">Ver Vídeos Animados</a>
+        </div>
+
+        <!-- Card 3: Site Premium -->
+        <div class="price-card card-premium-tier" onclick="filterTabDirect('site')">
+          <span class="tier-badge">MAIS COMPLETO</span>
+          <div class="price-card-icon">👑</div>
+          <h3 class="price-card-title">Convite Site Premium</h3>
+          <div class="price-card-val">R$ 197</div>
+          <ul class="price-card-features">
+            <li>Página web exclusiva com link único</li>
+            <li>Confirmação de Presença (RSVP)</li>
+            <li>Localização com Waze e Google Maps</li>
+            <li>Música, Contagem Regressiva e Fotos</li>
+          </ul>
+          <a href="#convite-premium-banner" class="btn btn-primary btn-block">Ver Modelo Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo Principal -->
+  <main class="catalog-controls-section" id="catalogo">
+    <div class="container">
+      
+      <!-- Controles de Filtros e Busca -->
+      <div class="controls-wrapper mb-8">
+        
+        <!-- Abas de Formatos -->
+        <div class="format-tabs-bar">
+          <button class="filter-tab-btn active-tab" data-tab="all">
+            <span>🌟</span>
+            <span>Todos os Modelos</span>
+            <span class="tab-badge" id="tab-count-all">48</span>
+          </button>
+          <button class="filter-tab-btn" data-tab="site">
+            <span>👑</span>
+            <span>Convite Site Premium (R$ 197)</span>
+            <span class="tab-badge">Exclusivo</span>
+          </button>
+          <button class="filter-tab-btn" data-tab="video">
+            <span>🎬</span>
+            <span>Vídeos Animados (R$ 89)</span>
+            <span class="tab-badge" id="tab-count-videos">4</span>
+          </button>
+          <button class="filter-tab-btn" data-tab="image">
+            <span>🖼️</span>
+            <span>Convites em Imagem (R$ 39)</span>
+            <span class="tab-badge" id="tab-count-images">43</span>
+          </button>
+        </div>
+
+        <!-- Busca por Tema e Pílulas -->
+        <div class="search-and-tags-row">
+          <div class="search-box-wrapper">
+            <span class="search-icon-inside">🔍</span>
+            <input 
+              type="text" 
+              id="catalog-search-input" 
+              class="catalog-search-input" 
+              placeholder="Digite um tema: ex: Dinossauro, Princesa, Safari, Fazendinha, Heróis, Gamer..."
+              autocomplete="off"
+            >
+            <button class="clear-search-btn hidden" id="clear-search-btn" title="Limpar pesquisa">✕</button>
+          </div>
+
+          <!-- Pílulas de Temas Populares -->
+          <div class="theme-tags-container">
+            <span style="font-size: 0.8rem; font-weight: 700; color: #64748b; margin-right: 0.25rem;">Temas:</span>
+            <button class="theme-tag-pill active-tag" data-tag="all">✨ Todos</button>
+            <button class="theme-tag-pill" data-tag="Princesa">👑 Princesas & Meninas</button>
+            <button class="theme-tag-pill" data-tag="Safari">🦁 Safari & Selva</button>
+            <button class="theme-tag-pill" data-tag="Dinossauro">🦖 Dinossauros</button>
+            <button class="theme-tag-pill" data-tag="Fazendinha">🐮 Fazendinha</button>
+            <button class="theme-tag-pill" data-tag="Super-Herói">🦸 Super-Heróis</button>
+            <button class="theme-tag-pill" data-tag="Gamer">🎮 Gamer & Video Game</button>
+            <button class="theme-tag-pill" data-tag="Circo">🎪 Circo da Alegria</button>
+            <button class="theme-tag-pill" data-tag="1 Aninho">🎂 1º Aninho</button>
+          </div>
+        </div>
+
+        <!-- Barra de contagem e status -->
+        <div class="results-info-bar">
+          <span id="results-counter">Carregando modelos...</span>
+          <span style="font-size: 0.82rem;">Clique no modelo para ver detalhes ou pedir no WhatsApp</span>
+        </div>
+      </div>
+
+      <!-- Container Dinâmico onde os itens do Catálogo são renderizados pelo JS -->
+      <div id="catalog-items-container">
+        <!-- Preenchido via app.js -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Seção Comparativa de Formatos & Tabela de Preços -->
+  <section class="how-it-works-section" id="tabela-precos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Preços Transparentes</span>
+        <h2 class="section-title">Qual é o Formato Perfeito para Você?</h2>
+        <p class="section-desc">Confira o que está incluso em cada categoria e escolha a que melhor se adapta à sua festa.</p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Formato 1 -->
+        <div class="step-card">
+          <div class="step-icon">🖼️</div>
+          <h3 class="step-title">Convite Imagem Digital</h3>
+          <p style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin: 0.5rem 0;">R$ 39,00</p>
+          <p class="step-desc">
+            Prático, econômico e perfeito para disparar para todos os contatos do WhatsApp. Arquivo em alta definição pronto para impressão ou compartilhamento digital sem limite de envios.
+          </p>
+        </div>
+
+        <!-- Formato 2 -->
+        <div class="step-card">
+          <div class="step-icon">🎬</div>
+          <h3 class="step-title">Convite Animado em Vídeo</h3>
+          <p style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin: 0.5rem 0;">R$ 89,00</p>
+          <p class="step-desc">
+            Uma mini animação de cinema com a música tema da festa, fotos e movimentos que encantam e surpreendem os convidados logo nos primeiros segundos.
+          </p>
+        </div>
+
+        <!-- Formato 3 -->
+        <div class="step-card" style="border: 2px solid #f59e0b; background: #fffdf5;">
+          <div class="step-icon">👑</div>
+          <h3 class="step-title">Convite Site Interativo Premium</h3>
+          <p style="font-size: 1.5rem; font-weight: 800; color: #b45309; margin: 0.5rem 0;">R$ 197,00</p>
+          <p class="step-desc">
+            O ápice da sofisticação: um site completo com link próprio, confirmação de presença (RSVP), rota GPS para Waze/Maps, música ambiente e contagem regressiva.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section class="how-it-works-section" id="como-funciona" style="background: #f8fafc;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Simples & Rápido</span>
+        <h2 class="section-title">Como Fazer o seu Pedido em 3 Passos</h2>
+        <p class="section-desc">Você escolhe o modelo e nós cuidamos de cada detalhe com muito amor e carinho.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">👀</div>
+          <h3 class="step-title">Escolha o Modelo</h3>
+          <p class="step-desc">Navegue pelo nosso catálogo de Imagens, Vídeos ou Convite Site Premium e escolha o tema que combina com a festa.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">💬</div>
+          <h3 class="step-title">Chame no WhatsApp</h3>
+          <p class="step-desc">Clique no botão verde do modelo. O WhatsApp abrirá automaticamente com o nome do convite para você enviar os dados (nome, idade, data e local).</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">🎉</div>
+          <h3 class="step-title">Receba Pronto em 24h</h3>
+          <p class="step-desc">Enviamos a prévia para sua aprovação. Após aprovado, você recebe o arquivo final em alta qualidade para impressionar todos os convidados!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Perguntas Frequentes -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Tire suas Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-desc">Tudo o que você precisa saber sobre nossos convites infantis.</p>
+      </div>
+
+      <div class="faq-grid">
+        <details class="faq-card">
+          <summary>Como recebo meu convite após o pedido?</summary>
+          <p>O convite finalizado é enviado diretamente no seu WhatsApp ou por e-mail em alta resolução (PNG/JPG para imagens, MP4 Full HD para vídeos, ou link exclusivo para o Convite em Site).</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>Qual o prazo de entrega?</summary>
+          <p>Nosso prazo padrão de entrega é de até 24 horas úteis após o envio de todos os dados da festa (nome, idade, data, horário e endereço).</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>Posso alterar os dados e as frases do convite?</summary>
+          <p>Sim! Todos os convites são 100% personalizados com os dados da sua comemoração, incluindo frases adicionais que a família desejar incluir.</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>Como funciona a confirmação de presença no Convite Site Premium?</summary>
+          <p>No Convite em Site (R$ 197), há um botão interativo de RSVP onde os convidados preenchem nome e quantidade de adultos/crianças, e a confirmação chega diretamente no seu WhatsApp!</p>
+        </details>
+
+        <details class="faq-card">
+          <summary>Quais são as formas de pagamento?</summary>
+          <p>Aceitamos Pix com liberação imediata e cartão de crédito. Você combina o pagamento diretamente com a gente pelo WhatsApp com total segurança.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-title">ConvitesMágicos ✨</div>
+          <p class="footer-desc">
+            Criando memórias inesquecíveis desde o primeiro momento. Especialistas em convites infantis digitais, vídeos animados e sites interativos de alta conversão e sofisticação.
+          </p>
+          <a href="#" class="btn btn-whatsapp general-whatsapp-link" target="_blank" rel="noopener noreferrer">
+            <svg class="wa-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.584 1.961.947 2.796.947 3.179 0 5.765-2.587 5.765-5.766-.001-3.182-2.585-5.768-5.765-5.768zm3.393 8.307c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.146-.532-1.859-.775-3.056-2.67-3.149-2.795-.091-.125-.758-1.009-.758-1.923 0-.915.479-1.365.65-1.551.171-.186.375-.233.5-.233.125 0 .25.002.359.007.116.006.27-.044.423.322.157.375.539 1.316.586 1.411.048.096.08.209.016.335-.064.126-.096.205-.191.317-.096.113-.203.251-.289.338-.096.096-.197.2-.085.392.112.193.498.822 1.069 1.33 1.332.735 1.488.949 1.701 1.045.213.096.338.08.464-.064.127-.144.542-.63.687-.845.144-.216.29-.18.487-.107.199.073 1.258.594 1.474.702.216.108.361.162.414.253.053.091.053.526-.091.931z"/>
+            </svg>
+            <span>Falar com Atendimento</span>
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Nossos Formatos</h4>
+          <ul class="footer-links">
+            <li><a href="#catalogo" onclick="filterTabDirect('image')">Convites em Imagem (R$ 39)</a></li>
+            <li><a href="#catalogo" onclick="filterTabDirect('video')">Vídeos Animados (R$ 89)</a></li>
+            <li><a href="#convite-premium-banner" onclick="filterTabDirect('site')">Convite Site Premium (R$ 197)</a></li>
+            <li><a href="#tabela-precos">Comparativo de Formatos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <ul class="footer-links">
+            <li>WhatsApp: <strong class="current-whatsapp-display">(11) 99999-9999</strong></li>
+            <li>Horário: Segunda a Sábado das 08h às 21h</li>
+            <li>Prazo de Entrega: Até 24 horas</li>
+            <li>Pagamento: Pix e Cartão de Crédito</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; ConvitesMágicos. Todos os direitos reservados. Feito com amor para momentos inesquecíveis.</div>
+        <div>
+          <button class="admin-trigger-btn" id="open-settings-btn" title="Configurar Telefone do WhatsApp">⚙️ Alterar Telefone do WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="#" class="floating-whatsapp-btn general-whatsapp-link" target="_blank" rel="noopener noreferrer" title="Tirar dúvidas no WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.584 1.961.947 2.796.947 3.179 0 5.765-2.587 5.765-5.766-.001-3.182-2.585-5.768-5.765-5.768zm3.393 8.307c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.146-.532-1.859-.775-3.056-2.67-3.149-2.795-.091-.125-.758-1.009-.758-1.923 0-.915.479-1.365.65-1.551.171-.186.375-.233.5-.233.125 0 .25.002.359.007.116.006.27-.044.423.322.157.375.539 1.316.586 1.411.048.096.08.209.016.335-.064.126-.096.205-.191.317-.096.113-.203.251-.289.338-.096.096-.197.2-.085.392.112.193.498.822 1.069 1.33 1.332.735 1.488.949 1.701 1.045.213.096.338.08.464-.064.127-.144.542-.63.687-.845.144-.216.29-.18.487-.107.199.073 1.258.594 1.474.702.216.108.361.162.414.253.053.091.053.526-.091.931z"/>
+    </svg>
+    <span>Fale Conosco</span>
+  </a>
+
+  <!-- Modal de Mídia (Ampliar Imagem ou Tocar Vídeo) -->
+  <div class="modal-backdrop hidden" id="media-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeMediaModal()" title="Fechar">✕</button>
+      <div id="media-modal-body">
+        <!-- Renderizado dinamicamente -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Demonstração Ao Vivo do Convite Site Premium -->
+  <div class="modal-backdrop hidden" id="live-site-modal">
+    <div class="modal-container live-site-modal-container">
+      <div class="live-site-header">
+        <div style="display: flex; align-items: center; gap: 0.65rem;">
+          <span style="font-size: 1.4rem;">👑</span>
+          <div>
+            <h4 style="font-size: 1.1rem; line-height: 1.1;">Demonstração Ao Vivo • Convite Site Real</h4>
+            <span style="font-size: 0.78rem; color: #64748b;">Navegue e interaja com o site de aniversário da Isadora</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <a href="https://site-oficial-seguro.github.io/convite-aniversario-isadora/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.45rem 0.9rem;">
+            Abrir em Nova Aba ↗
+          </a>
+          <a href="#" id="modal-order-premium-btn" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="font-size: 0.82rem; padding: 0.45rem 1rem;">
+            Pedir este Site (R$ 197)
+          </a>
+          <button class="modal-close-btn" style="position: static;" onclick="closeLiveSiteModal()" title="Fechar">✕</button>
+        </div>
+      </div>
+      <div class="live-site-iframe-wrap">
+        <iframe id="live-site-iframe" src="" title="Prévia do Site Isadora"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Configuração de Telefone do WhatsApp -->
+  <div class="modal-backdrop hidden" id="settings-modal">
+    <div class="modal-container settings-modal-container">
+      <button class="modal-close-btn" id="close-settings-btn" title="Fechar">✕</button>
+      <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">⚙️ Configurar WhatsApp</h3>
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+        Insira o número do WhatsApp da sua loja com código do país (55) e DDD para onde os clientes serão direcionados ao clicar em qualquer botão do site.
+      </p>
+      <form id="settings-form">
+        <div class="form-group">
+          <label for="settings-phone-input">Número do WhatsApp (com DDD):</label>
+          <input type="text" id="settings-phone-input" class="form-input" placeholder="Ex: 5511999999999" required>
+          <small style="color: #64748b; display: block; margin-top: 0.35rem;">Exemplo: 55 + DDD + 9 dígitos (somente números)</small>
+        </div>
+        <button type="submit" class="btn btn-whatsapp btn-block">Salvar Número</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/catalog-data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Atalho direto de filtro pelas seções
+    function filterTabDirect(tabName) {
+      const tabBtn = document.querySelector(`.filter-tab-btn[data-tab="${tabName}"]`);
+      if (tabBtn) {
+        tabBtn.click();
+      }
+      const catalogoEl = document.getElementById("catalogo");
+      if (catalogoEl) {
+        catalogoEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  </script>
+</body>
+</html>

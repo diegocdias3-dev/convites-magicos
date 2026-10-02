@@ -37,7 +37,6 @@ Catálogo completo, interativo e responsivo de convites infantis personalizados,
 
 - **Número Oficial:** `+55 (42) 99841-2819` (`5542998412819`)
 - Cada convite possui um botão de ação com ícone do WhatsApp que envia uma mensagem personalizada com o nome exato do modelo e o valor.
-- O número de atendimento pode ser ajustado facilmente clicando em **"⚙️ Alterar Telefone do WhatsApp"** no rodapé do site.
 
 ---
 
